@@ -1,0 +1,28 @@
+// variables and colors
+@use 'variables' as var;
+
+
+.navbar{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: var.$base-padding;
+
+	h2{
+		font-weight: 600;
+	}
+}
+
+.navbar ul{
+	display: inline-block;
+	display: flex;
+	justify-content: space-around;
+	li{
+		margin: 0 var.$base-margin;
+		a{
+			font-size: var.$base-font-size;
+			color: var.$primary;
+		}
+	}
+}
